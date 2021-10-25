@@ -1,0 +1,40 @@
+<div class="text-center">
+    <div class="card-body">
+        <h3 class="card-title"> Cadastro de Filme</h3>
+    </div>
+</div>
+<form class="formulario" (ngSubmit)="cadastrar()">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nome</label>
+                <input class="form-control" id="nome" type="text" [(ngModel)]="nome" name="nome" placeholder="Nome" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">ano</label>
+                <input class="form-control" id="ano" type="text" [(ngModel)]="ano" name="ano" placeholder="ano" />
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">diretor</label>
+                <input class="form-control" id="diretor" type="text" [(ngModel)]="diretor" name="diretor" placeholder="diretor" />
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">gênero</label>
+                <input class="form-control" id="genero" type="text" [(ngModel)]="genero" name="genero" placeholder="genero" />
+            </div>
+        
+            <div class="form-group">
+                <label for="exampleInputEmail1">descrição </label>
+                <input class="form-control" id="descricao " type="text" [(ngModel)]="descricao" name="descricao" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <button type="submit" class="btn btn-outline-primary">Cadastrar Filme</button>
+            </div>
+        </div>
+    </div>
+    <br>
+</form>

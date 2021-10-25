@@ -1,0 +1,38 @@
+<div class="text-center">
+    <div class="card-body">
+        <h3 class="card-title"> Lista de filmes</h3>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-sm-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Ano</th>
+                    <th scope="col">Diretor</th>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Descrição </th>
+                    <th scope="col">Pôster</th>
+                    <th scope="col">Ações</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let participante of participantes">
+                    <th scope="row">{{participante.nome}}</th>
+                    <td>{{participante.ano}}</td>
+                    <td>{{participante.diretor}}</td>
+                    <td>{{participante.genero}}</td>
+                    <td>{{participante.descricao}}</td>
+                    <td><img class="mr-2"src="{{participante.poster}}" alt=""></td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info mx-3">Editar</button>
+                        <button type="button" class="btn btn-outline-danger">Deletar</button>
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
